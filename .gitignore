@@ -1,0 +1,10 @@
+.env
+
+__pycache__/
+
+*.pkl
+*.csv
+
+.ipynb_checkpoints/
+
+node_modules/
