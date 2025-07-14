@@ -1,5 +1,3 @@
-# app.py (versión en inglés)
-
 import streamlit as st
 import pickle
 import networkx as nx

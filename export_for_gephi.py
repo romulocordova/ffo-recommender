@@ -1,5 +1,3 @@
-# export_for_gephi.py
-
 import pickle
 import networkx as nx
 
@@ -10,10 +8,8 @@ try:
 except FileNotFoundError:
     print("❌ Error: No se encontró 'grafo_bandas.pkl'.")
     print("Asegúrate de haber ejecutado 'scrape_posts.py' y 'grafo_bandas.py' primero.")
-    exit()
 
-# El formato GEXF es ideal para Gephi porque guarda todos los atributos
-# de los nodos (país, followers, etc.) y las aristas (weight).
+    exit()
 output_filename = "grafo_para_gephi.gexf"
 nx.write_gexf(G, output_filename)
 
